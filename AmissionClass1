@@ -1,0 +1,30 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract AdmissionClasss1 {
+    // Function to check eligibility for taking admission
+    function checkEligibility(uint _age) public pure returns (string memory) {
+        // Check if age is 6 or above
+        require(_age >= 6, "You must be above 6 to take admission in Class 1 in India");
+
+        // If age is 6, congratulate the applicant and assert age is exactly 6
+        if (_age == 6) {
+            assert(_age == 6);
+            return "Congratulations! You are now eligible to take Admission";
+        }
+
+        // If age is above 6, return eligibility message
+        return "You are eligible to take admission";
+    }
+
+    // Function to demonstrate revert if age is below 6
+    function applyForAdmission(uint _age) public pure returns (string memory) {
+        // Revert if age is below 18
+        if (_age < 6) {
+            revert("You are not eligible to take admission, age must be 6 or above");
+        }
+
+        // Return eligibility message
+        return "You are eligible to take admission";
+    }
+}
