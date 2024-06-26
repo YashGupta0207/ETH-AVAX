@@ -30,7 +30,7 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
   
     -  
       ```solidity
-      // SPDX-Admission-Identifier: MIT
+      // SPDX-License-Identifier: MIT
        pragma solidity ^0.8.0;
       contract AdmissionClasss1 {
        // Function to check eligibility for taking admission
