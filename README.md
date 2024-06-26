@@ -31,7 +31,7 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
     -  
       ```solidity
       // SPDX-License-Identifier: MIT
-       pragma solidity ^0.8.0;
+       pragma solidity >=0.8.0;
       contract AdmissionClasss1 {
        // Function to check eligibility for taking admission
       function checkEligibility(uint _age) public pure returns (string memory) {
